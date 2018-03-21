@@ -22,7 +22,13 @@ SQL check: SELECT * FROM setup_module WHERE module = 'Mastering_SampleModule';
 
 Database install scripts
 DELETE FROM setup_module WHERE module = 'Mastering_SampleModule';
-bin/magento setup:upgrade
+php bin/magento setup:upgrade
 SELECT * FROM setup_module;
 SELECT * FROM mastering_sample_item;
+
+Database upgrade scripts
+php bin/magento setup:upgrade
+SELECT * FROM mastering_sample_item;
+How to add a foreign key to a database table: https://mage2.pro/t/topic/569
+
 
