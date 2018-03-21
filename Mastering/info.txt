@@ -1,0 +1,26 @@
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.2.0 magento
+bin/magento cache:clean
+bin/magento cache:flush
+/pub/static/ static js/css cache, /generated/ class cache
+https://magento.stackexchange.com/questions/94502/magento2-re-generate-css-file-in-pub-static-folder
+Warning: DOMDocument::schemaValidate(): Invalid Schema in\magento\framework\Config\Dom.php on line ... on dev mode
+php bin/magento deploy:mode:set production --skip-compilation
+php bin/magento setup:static-content:deploy
+php bin/magento deploy:mode:set developer
+restart apache
+cache clean/flush + remove cache from /pub/static/ and /generated/, clear browser cache
+php bin/magento deploy:mode:show
+
+New module declaration
+project/app/code/module namespace (Mastering)/module name (SampleModule)
+php bin/magento module:status
+php bin/magento module:enable Mastering_SampleModule
+php bin/magento module:disable Mastering_SampleModule
+check app/etc/config.php ('Mastering_SampleModule' => 1,)
+bin/magento setup:upgrade
+SQL check: SELECT * FROM setup_module WHERE module = 'Mastering_SampleModule';
+
+
+
+
+
