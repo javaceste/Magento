@@ -20,7 +20,9 @@ check app/etc/config.php ('Mastering_SampleModule' => 1,)
 bin/magento setup:upgrade
 SQL check: SELECT * FROM setup_module WHERE module = 'Mastering_SampleModule';
 
-
-
-
+Database install scripts
+DELETE FROM setup_module WHERE module = 'Mastering_SampleModule';
+bin/magento setup:upgrade
+SELECT * FROM setup_module;
+SELECT * FROM mastering_sample_item;
 
