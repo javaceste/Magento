@@ -38,4 +38,10 @@ for testing purposes disable secret key from URLs
         disable 'Add Secret Key to URLs'
 http://www.magento220.localhost/admin/mastering outputs 'Hello Admins!'
 
+View layer
+http://www.magento220.localhost/mastering outputs the main frontend layout (1 column page)
+with content from table:
+    Item 1: Default description
+    Item 2: 
+
 
