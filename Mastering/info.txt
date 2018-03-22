@@ -1,6 +1,6 @@
 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.2.0 magento
-bin/magento cache:clean
-bin/magento cache:flush
+php bin/magento cache:clean
+php bin/magento cache:flush
 /pub/static/ static js/css cache, /generated/ class cache
 https://magento.stackexchange.com/questions/94502/magento2-re-generate-css-file-in-pub-static-folder
 Warning: DOMDocument::schemaValidate(): Invalid Schema in\magento\framework\Config\Dom.php on line ... on dev mode
@@ -30,5 +30,12 @@ Database upgrade scripts
 php bin/magento setup:upgrade
 SELECT * FROM mastering_sample_item;
 How to add a foreign key to a database table: https://mage2.pro/t/topic/569
+
+Controller layer
+http://www.magento220.localhost/mastering outputs 'Hello World!'
+for testing purposes disable secret key from URLs
+    admin panel: stores->configuration->advanced->admin->security
+        disable 'Add Secret Key to URLs'
+http://www.magento220.localhost/admin/mastering outputs 'Hello Admins!'
 
 
