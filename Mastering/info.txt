@@ -44,4 +44,10 @@ with content from table:
     Item 1: Default description
     Item 2: 
 
+Console Commands
+php bin/magento cache:flush
+php bin/magento //you should see the command 'mastering:item:add'
+php bin/magento mastering:item:add "Item 3" "third description"
+http://www.magento220.localhost/mastering for checking
+
 
