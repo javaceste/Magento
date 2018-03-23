@@ -59,3 +59,8 @@ SELECT * FROM mastering_sample_item; or http://www.magento220.localhost/masterin
 To disable: delete the records from table, comment the job in xml, clear cache
 (DELETE FROM cron_schedule WHERE job_code LIKE '%mastering%';)
 
+Backend menus and acl
+click on Mastering menu from admin panel will open 
+http://www.magento220.localhost/admin/mastering/
+which outputs 'Hello Admins!'
+
