@@ -83,3 +83,8 @@ an XML response with all our items
     ...
 </response>
 
+Rendering grids
+Mastering menu (http://www.magento220.localhost/admin/mastering/) 
+outputs the table info in a grid
+with filters, search, ...
+
