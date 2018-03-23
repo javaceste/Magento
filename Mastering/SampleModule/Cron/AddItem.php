@@ -3,21 +3,27 @@
 namespace Mastering\SampleModule\Cron;
 
 use Mastering\SampleModule\Model\ItemFactory;
+use Mastering\SampleModule\Model\Config;
 
-class AddItem 
+class AddItem
 {
-	private $itemFactory;
-	
-	public function __construct(ItemFactory $itemFactory) 
-	{
-		$this->itemFactory = $itemFactory;
-	}
-	
-	public function execute()
-	{
-		$this->itemFactory->create()
-			->setName('Scheduled item')
-			->setDescription('Created at ' . time())
-			->save();
-	}
+    private $itemFactory;
+
+    private $config;
+
+    public function __construct(ItemFactory $itemFactory, Config $config)
+    {
+        $this->itemFactory = $itemFactory;
+        $this->config = $config;
+    }
+
+    public function execute()
+    {
+        if ($this->config->isEnabled()) {
+            $this->itemFactory->create()
+                ->setName('Scheduled item')
+                ->setDescription('Created at ' . time())
+                ->save();
+        }
+    }
 }

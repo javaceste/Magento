@@ -64,3 +64,11 @@ click on Mastering menu from admin panel will open
 http://www.magento220.localhost/admin/mastering/
 which outputs 'Hello Admins!'
 
+System configuration
+stores->configuration->mastering->mastering outputs:
+Item creation by schedule
+and default values of 'Enabled' and 'Add Item Cron Expression' are prepopulated from config.xml
+change there to Yes for example and */5 * * * * (each 5 minutes), save config
+when this configurations are saved, values are saved to DB and they are loaded from DB instead of config.xml
+(core_config_data table)
+
