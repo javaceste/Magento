@@ -72,3 +72,14 @@ change there to Yes for example and */5 * * * * (each 5 minutes), save config
 when this configurations are saved, values are saved to DB and they are loaded from DB instead of config.xml
 (core_config_data table)
 
+Web api implementation
+www.magento220.localhost/rest/V1/mastering outputs
+an XML response with all our items
+<response>
+    <item>
+        <name>Scheduled item</name>
+        <description>Created at 1521720916</description>
+    </item>
+    ...
+</response>
+
