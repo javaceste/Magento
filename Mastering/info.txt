@@ -104,3 +104,8 @@ http://www.magento220.localhost/admin/sales
     new field: Base Tax Amount
     'Purchase Date' now is showing just date
 
+Checkout Customization
+(Disable Order Summary block and adding additional component to checkout and rendering on checkout page)
+http://www.magento220.localhost/checkout/
+magento module-checkout/view/frontend/layout/checkout_index_index.xml
+
