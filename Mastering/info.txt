@@ -94,3 +94,13 @@ Rendering forms
 Same grid as above, now will have "Add Item" button for adding new items
 with the form created and redirects back to the grid on save
 
+Extending UI Components
+http://www.magento220.localhost/admin/sales/order/ the layout is found in:
+magento module-sales/view/adminhtml/layout/sales_order_index.xml
+config UI component: module-sales/view/adminhtml/ui_component/sales_order_grid.xml
+php bin/magento cache:flush
+php bin/magento setup:upgrade
+http://www.magento220.localhost/admin/sales
+    new field: Base Tax Amount
+    'Purchase Date' now is showing just date
+
