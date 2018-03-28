@@ -6,6 +6,7 @@
             <item name="deps" xsi:type="string">mastering_items_grid.mastering_items_grid_data_source</item>
         </item>
         <item name="spinner" xsi:type="string">mastering_items_columns</item>
+        
         <item name="buttons" xsi:type="array">
             <item name="add" xsi:type="array">
                 <item name="name" xsi:type="string">add</item>
@@ -14,6 +15,7 @@
                 <item name="url" xsi:type="string">*/item/new</item>
             </item>
         </item>
+        
     </argument>
     <dataSource name="mastering_items_grid_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">

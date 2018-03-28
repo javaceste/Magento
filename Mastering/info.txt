@@ -1,3 +1,5 @@
+https://mage2gen.com/
+
 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:2.2.0 magento
 php bin/magento cache:clean
 php bin/magento cache:flush
@@ -87,4 +89,8 @@ Rendering grids
 Mastering menu (http://www.magento220.localhost/admin/mastering/) 
 outputs the table info in a grid
 with filters, search, ...
+
+Rendering forms
+Same grid as above, now will have "Add Item" button for adding new items
+with the form created and redirects back to the grid on save
 
